@@ -1,0 +1,31 @@
+{
+    "name": "ariby/Ulid",
+    "description": "Laravel package Use to auto product Ulid id, prevent error. This package is modify from rorecek/laravel-ulid. Fixed some path and include problem.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ariby",
+            "email": "defsrisars@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.2",
+        "Illuminate/Support": "~5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "ariby\\HasUlid\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ariby\\Ulid\\HasUlidServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
