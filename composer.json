@@ -1,10 +1,10 @@
 {
-    "name": "ariby/Ulid",
+    "name": "ariby/ulid",
     "description": "Laravel package Use to auto product Ulid id, prevent error. This package is modify from rorecek/laravel-ulid. Fixed some path and include problem.",
     "type": "library",
     "authors": [
         {
-            "name": "defsrisars",
+            "name": "Ariby",
             "email": "defsrisars@gmail.com"
         }
     ],
