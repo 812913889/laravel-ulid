@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ariby\\Ulid\\HasUlidServiceProvider"
+                "ariby\\Ulid\\UlidServiceProvider"
             ],
             "aliases": {
             }
