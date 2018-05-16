@@ -14,13 +14,13 @@
     },
     "autoload": {
         "psr-4": {
-            "ariby\\HasUlid\\": "src/"
+            "Ariby\\Ulid\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ariby\\Ulid\\UlidServiceProvider"
+                "Ariby\\Ulid\\UlidServiceProvider"
             ],
             "aliases": {
             }

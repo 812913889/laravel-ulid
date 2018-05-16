@@ -1,5 +1,5 @@
 <?php
-namespace ariby\Ulid;
+namespace Ariby\Ulid;
 
 class Ulid implements Contracts\Factory
 {

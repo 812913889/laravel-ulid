@@ -1,6 +1,6 @@
 <?php
 
-namespace ariby\Ulid;
+namespace Ariby\Ulid;
 
 use Illuminate\Support\ServiceProvider;
 

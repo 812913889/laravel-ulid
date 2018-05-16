@@ -1,14 +1,14 @@
 <?php
-namespace ariby\Ulid;
+
+namespace Ariby\Ulid;
 
 trait HasUlid
 {
-    protected static function boot()
-    {
-        parent::boot();
 
+    public static function bootHasUlid()
+    {
         static::creating(function ($model) {
-            if (! $model->id) {
+            if (!$model->id) {
                 $model->id = Ulid::generate();
             }
         });
@@ -20,4 +20,14 @@ trait HasUlid
             }
         });
     }
+
+    /*
+     * This function is used internally by Eloquent models to test if the model has auto increment value
+     * @returns bool Always false
+     */
+    public function getIncrementing()
+    {
+        return false;
+    }
+
 }
