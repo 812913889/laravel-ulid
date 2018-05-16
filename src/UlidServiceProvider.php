@@ -23,19 +23,7 @@ class UlidServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(Contracts\Factory::class, function ($app) {
-            return new Ulid();
-        });
-    }
 
-    /**
-     * Get the services provided by the provider.
-     *
-     * @return array
-     */
-    public function provides()
-    {
-        return [Factory::class];
     }
 
 }

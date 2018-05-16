@@ -1,18 +1,14 @@
 # Laravel ULID
 
-Laravel package to generate ULID (Universally Unique Lexicographically Sortable Identifier), which also contains trait for your models that will let you generate ULID ids for your Eloquent models automatically. Based on [robinvdvleuten/php-ulid](https://github.com/robinvdvleuten/php-ulid).
-
-這個專案根據 [rorecek/laravel-ulid](https://github.com/rorecek/laravel-ulid) 進行修改，修改一些路徑參考的錯誤
-
 ## Usage
 
 ### Models
 
 To set up a model to use ULID, simply use the HasUlid trait and set the incrementing flag to false.
 
-需要在要使用的ORM檔案中 `use ariby\Ulid\HasUlid`
+需要在要使用的ORM檔案中 `use Ariby\Ulid\HasUlid`
 
-並在class中寫入 `use ariby\Ulid\HasUlid` & `public $incrementing = false;`
+並在class中寫入 `use Ariby\Ulid\HasUlid` & `public $incrementing = false;`
 
 ``` php
 use Illuminate\Database\Eloquent\Model;
@@ -33,8 +29,3 @@ class Item extends Model
   ....
 }
 ```
-
-
-## License
-
-這個專案的原作者為`rorecek/laravel-ulid`，因為pull request沒有回應，又想做一些修改，故有了此專案，版權所有以原作者為主。

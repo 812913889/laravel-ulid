@@ -2,21 +2,16 @@
 
 namespace Ariby\Ulid;
 
+use Ulid\Ulid;
+
 trait HasUlid
 {
 
     public static function bootHasUlid()
     {
         static::creating(function ($model) {
-            if (!$model->id) {
-                $model->id = Ulid::generate();
-            }
-        });
-
-        static::saving(function ($model) {
-            $originalUlid = $model->getOriginal('id');
-            if ($originalUlid !== $model->id) {
-                $model->id = $originalUlid;
+            if (!isset($model->attributes[$model->getKeyName()])) {
+                $model->attributes[$model->getKeyName()] = (string) Ulid::generate();
             }
         });
     }
