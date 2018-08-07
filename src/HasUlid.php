@@ -2,8 +2,6 @@
 
 namespace Ariby\Ulid;
 
-use Ulid\Ulid;
-
 trait HasUlid
 {
 
