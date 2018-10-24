@@ -7,6 +7,9 @@
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
+ *
+ * @source https://raw.githubusercontent.com/rorecek/laravel-ulid/master/src/Ulid.php
+ * @see https://github.com/rorecek/laravel-ulid
  */
 
 namespace Ariby\Ulid;
@@ -49,17 +52,11 @@ class Ulid
         $this->randomness = $randomness;
     }
 
-    /**
-     * @return Ulid
-     */
     public static function fromString($value)
     {
         return new Ulid(substr($value, 0, 10), substr($value, 10));
     }
 
-    /**
-     * @return Ulid
-     */
     public static function generate()
     {
         $now = intval(microtime(true) * 1000);
