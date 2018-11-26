@@ -1,8 +1,8 @@
 # Laravel ULID
 
-Laravel package to generate ULID (Universally Unique Lexicographically Sortable Identifier), which also contains trait for your models that will let you generate ULID ids for your Eloquent models automatically. Based on robinvdvleuten/php-ulid.
+Laravel package to generate ULID (Universally Unique Lexicographically Sortable Identifier), which also contains trait for your models that will let you generate ULID ids for your Eloquent models automatically. Based on **robinvdvleuten/php-ulid**.
 
-這個專案根據 rorecek/laravel-ulid 進行修改，修改一些路徑參考的錯誤，和 composer update 時會發生的錯誤，然後優化了一些使用
+這個專案根據 **rorecek/laravel-ulid** 進行修改，修改一些路徑參考的錯誤，和 composer update 時會發生的錯誤，然後優化了一些使用
 
 ## Usage
 
