@@ -1,5 +1,5 @@
 {
-    "name": "ariby/ulid",
+    "name": "lampge/ulid",
     "description": "Laravel package Use to auto product primary key.",
     "type": "library",
     "authors": [
